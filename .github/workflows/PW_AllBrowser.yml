@@ -1,0 +1,23 @@
+name: All browser test
+
+on: push
+jobs:
+  sampleLinux:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Runs on ubuntu
+        run: echo hello runs on ubuntu
+  sampleWindows:
+    needs: sampleLinux
+    runs-on: windows-latest
+    steps:
+      - name: Runs on windows
+        run: echo hello runs on windows
+  sampleMac:
+    needs: 
+      - sampleLinux
+      - sampleWindows
+    runs-on: macos-latest
+    steps:
+      - name: Runs on macos
+        run: echo hello runs on macos
