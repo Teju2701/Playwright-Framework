@@ -1,6 +1,6 @@
 import { test as base } from "@playwright/test"
 import {LoginPage} from '../pages/LoginPage.js'
-import {dashboard} from "../Pages/DashboardPage.js"
+import {dashboard} from "../pages/DashboardPage.js"
 import { newUserLogin } from '../pages/NewUserLogin.js'
 
 
