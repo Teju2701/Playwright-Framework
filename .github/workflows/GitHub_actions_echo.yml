@@ -1,0 +1,9 @@
+name: PW Echo test
+
+on: push
+jobs:
+  sample:
+    runs-on: windows-latest
+    steps: 
+     - name: Say hello
+       run : "echo Hello Teju"
